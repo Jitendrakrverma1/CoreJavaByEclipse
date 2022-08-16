@@ -1,0 +1,10 @@
+package Jitendra;
+
+public class Check_Number_positive_or_Negative {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

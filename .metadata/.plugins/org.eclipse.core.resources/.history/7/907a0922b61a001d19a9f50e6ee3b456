@@ -1,0 +1,9 @@
+package jitendra;
+public class CClass extends PClass
+ {
+   public int b =10;
+   public CClass(int x) {
+	   System.out.println("==Constructor of Cclass==");
+	   System.out.println("==The value of b:"+b);
+   }
+ }

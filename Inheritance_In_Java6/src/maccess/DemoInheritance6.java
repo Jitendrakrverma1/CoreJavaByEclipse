@@ -1,0 +1,8 @@
+package maccess;
+import jitendra.*;
+public class DemoInheritance6 {
+	public static void main(String[] args) {
+		CClass ob = new CClass();
+		ob.calculate(15, 15);
+	}
+}

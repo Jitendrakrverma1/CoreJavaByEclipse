@@ -1,0 +1,7 @@
+package jitendra;
+public class CClass {
+  public int b=20;
+  public CClass() {
+	  System.out.println("The value of b:"+b);
+  }
+}

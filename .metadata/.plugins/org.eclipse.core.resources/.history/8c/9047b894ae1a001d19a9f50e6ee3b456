@@ -1,0 +1,12 @@
+package maccess;
+import jitendra.*;
+public class DemoInheritance2 {
+	public static void main(String[] args) {
+		ChildClass.m1(); //Parent_class_method_call
+		ChildClass.m2(); //Child_class_method_call
+	}
+	static {
+		System.out.println("I amgufran");
+	}
+
+}

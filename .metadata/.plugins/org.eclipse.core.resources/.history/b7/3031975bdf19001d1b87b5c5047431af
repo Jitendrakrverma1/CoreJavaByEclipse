@@ -1,0 +1,23 @@
+package Jitendra;
+import java.util.Scanner;
+public class Average_mark_of_subject {
+	public static void main(String[] args) {
+	  float a, b,c,d,e;
+	  Scanner s = new Scanner(System.in);
+	  System.out.print("Enter the value of a:"); 
+	   a = s.nextFloat();
+	  System.out.print("Enter the value of b:"); 
+	   b = s.nextFloat();
+	  System.out.print("Enter the value of c:"); 
+	   c = s.nextFloat();
+	  System.out.print("Enter the value of d:");
+	   d = s.nextFloat();
+	  System.out.print("Enter the value of e:");
+	   e = s.nextFloat();
+	   float totMark = a+b+c+d+e;
+	   float avg = totMark/5;
+	   System.out.println("Average mark of 5 subject:"+avg);
+	  s.close();
+	}
+
+}

@@ -1,0 +1,10 @@
+package Jitendra;
+
+public class Covert_Lower_to_Upper_and_Vice_versa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

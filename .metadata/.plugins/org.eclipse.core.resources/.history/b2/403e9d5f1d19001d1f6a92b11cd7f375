@@ -1,0 +1,8 @@
+package test;
+public class Customer {
+    String custId, custName, mailId;
+    long phNo;
+    public Customer() {
+    	
+    }
+}

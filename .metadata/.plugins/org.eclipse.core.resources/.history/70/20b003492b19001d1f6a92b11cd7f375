@@ -1,0 +1,15 @@
+package test;
+public class Employeee {
+   String eId, eName, eDesg;
+//   Address ad;
+   Contact c;
+   Salary sl;
+   public Employeee(Contact c1, Salary c2) {
+	   c = c1;
+	   sl = c2;
+   }
+public String toString() {
+	   return e.eId+"\n"+e.eName+"\n"+e.eDesg+"\n"+e.c.mailId+"\n"+
+            e.c.phNo+"\n"+e.c.
+   }
+}

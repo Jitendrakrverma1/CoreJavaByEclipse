@@ -1,0 +1,23 @@
+
+            // Factorial using recursion
+package Jitendra;
+import java.util.Scanner;
+public class Factorial_using_recursion 
+ { 
+	int fact(int n) {
+		if(n==1)  // Base case
+		    return 1;
+		else 
+			return n*fact(n-1);  // General case
+	}
+	public static void main(String[] args) {
+		int n;
+		System.out.print("Enter any number:");
+		Scanner s = new Scanner(System.in);
+		n = s.nextInt();
+	Factorial_using_recursion  ob = new Factorial_using_recursion ();
+		int result =ob.fact(n);
+		System.out.print("Facctorial of "+n+" "+result);
+		s.close();
+	}
+}

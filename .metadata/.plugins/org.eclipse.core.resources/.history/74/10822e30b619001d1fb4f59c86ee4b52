@@ -1,0 +1,38 @@
+package Jitendra;
+import java.util.Scanner;
+public class Sum_of_Even_Odd_Num {
+	public static void main(String[] args) {
+		int n,i,sum=0,sum1=0;
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter the num:");
+		n = s.nextInt();
+		//1) method -1
+		for(i=0; i<=n; i++)
+	    {
+			if(i%2==0) 
+			{
+				sum = sum + i;
+			}
+			else {
+				sum1 = sum1 +i;
+			}
+			s.close();
+		}
+		System.out.print("Sum of even num::"+sum+" ");
+		System.out.println();
+		System.out.print("Sum of Odd Num:"+sum1+" ");
+		//2)method -2
+		if(n%2==0) {
+			for(i=0; i<=n; i++) {
+				sum = sum+i;
+			}
+			System.out.print("sum of even:"+sum+" ");
+		}
+		else {
+			for(i=0; i<=n; i++) {
+				sum = sum + i;
+			}
+			System.out.print("Sum of odd:"+sum+" ");
+		}
+	}
+}

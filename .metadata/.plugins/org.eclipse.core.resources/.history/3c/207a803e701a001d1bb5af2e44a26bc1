@@ -1,0 +1,10 @@
+package Jitendra;
+
+public class Prime_Number_Between_two_Number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

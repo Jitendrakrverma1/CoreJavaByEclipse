@@ -1,0 +1,17 @@
+                  // Static member of parent class
+package jitendra;
+public class ParentClass 
+ {
+   public  int a =10; 
+   // PClass method of instance type
+   public  void m1() 
+   {
+	   System.out.println("===Parent class intance method====");
+	   System.out.println("the value of a:"+a);
+   }
+   // Instance method of PClass
+   {
+	 System.out.println("==PClass instance block");  
+	 System.out.println("The value of a:"+a);
+   }
+}

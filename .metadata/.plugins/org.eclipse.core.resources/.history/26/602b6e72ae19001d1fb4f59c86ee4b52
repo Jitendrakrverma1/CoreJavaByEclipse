@@ -1,0 +1,19 @@
+package Jitendra;
+import java.util.Scanner;
+public class OddOREvenNumber
+ {
+	public static void main(String args[]) {
+		int num;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the num:");
+		num = s.nextInt();
+		// for even or odd
+		if(num%2==0) {
+			System.out.println("Number is even");
+		}
+		else {
+			System.out.println("Number is odd");
+		}
+	 s.close();
+	}
+ }

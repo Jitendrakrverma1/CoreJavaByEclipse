@@ -1,0 +1,14 @@
+
+                    // Print A to Z Alphabet    
+package Jitendra;
+
+public class A_to_Z_print_Alphabet {
+
+	public static void main(String[] args) {
+	    for(char i='A'; i<='Z'; i++)
+	    {
+	    	System.out.print(i+" ");
+	    }
+	}
+
+}

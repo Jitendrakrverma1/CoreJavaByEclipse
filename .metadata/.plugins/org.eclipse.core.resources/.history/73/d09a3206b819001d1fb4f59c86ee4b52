@@ -1,0 +1,12 @@
+package Jitendra;
+import java.util.Scanner;
+public class Print_Character_in_java {
+	public static void main(String[] args) {
+	  char ch;
+	  System.out.println("Please enter character:");
+	  Scanner s = new Scanner(System.in);
+	  ch = s.next().charAt(0);
+	  System.out.println("Character is:"+ch);
+	}
+
+}

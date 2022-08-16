@@ -1,0 +1,28 @@
+
+        // Character pattern program
+package Jitendra;
+public class Pattern4_Character {
+	public static void main(String[] args) {
+		char i,j;
+		for(i='A'; i<='E'; i++) {
+			for(j='A'; j<=i; j++) {
+				System.out.print(j);
+			}
+			System.out.print("\n");
+		}
+//output:=
+//		A
+//		AB
+//		ABC
+//		ABCD
+//		ABCDE
+		
+      // character pattern 2
+		for(i='A'; i<='E'; i++) {
+			for(j='A'; j<=i; j++) {
+				System.out.print(i);
+			}
+			System.out.print("\n");
+		}
+	}
+}

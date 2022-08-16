@@ -1,0 +1,6 @@
+package test;
+public class DisplayEmpDetails {
+   void dis(Employeee e) {
+	   System.out.println(e.toString());
+   }
+}

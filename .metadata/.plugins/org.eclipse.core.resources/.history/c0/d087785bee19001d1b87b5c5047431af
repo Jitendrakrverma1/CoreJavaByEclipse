@@ -1,0 +1,13 @@
+       // Area of Square ( A = r*r )
+package Jitendra;
+import java.util.Scanner;
+public class Area_Of_sqaure {
+	public static void main(String[] args) {
+		int r;
+		Scanner s = new Scanner(System.in);
+		r = s.nextInt();
+		int Area = r*r;
+		System.out.print("Area of Square:"+Area);
+		s.close();
+	}
+}

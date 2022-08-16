@@ -1,0 +1,15 @@
+package Jitendra;
+
+public class String_Comparision {
+
+	public static void main(String[] args) {
+		String s1 = "Lion";
+		String s2 = "Lion";
+		// using == operator
+	if(s1==s2) 
+	     System.out.print("Both are equal..");
+	else
+		System.out.print("Both are not equal..");
+//	output:= Both are not equal
+	}
+}

@@ -1,0 +1,10 @@
+package Jitendra;
+
+public class Sum_of_Even_Odd_Num {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
