@@ -1,8 +1,0 @@
-package test;
-//import java.util.*;
-public class Salary {
-//	Scanner s2 = new Scanner(System.in);
-//	float a = s2.nextFloat();
-	float bSal;
-   float totsal;
-}

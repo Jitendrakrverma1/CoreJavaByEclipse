@@ -1,7 +1,0 @@
-package test;
-public class Salary {
-   int bSal; 
-//   long totsal;
-//   double totSal;
-   long totsal;
-}

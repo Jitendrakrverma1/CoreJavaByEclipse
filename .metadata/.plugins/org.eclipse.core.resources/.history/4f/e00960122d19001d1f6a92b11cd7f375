@@ -1,8 +1,0 @@
-package test;
-import java.util.*;
-public class Salary {
-	Scanner s1 = new Scanner(System.in);
-	float a = s1.nextFloat();
-	float bSal =(0.93F*a)+(0.63F*a);
-   float totsal= bSal;
-}
