@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;maccess.Deom1&apos; to &apos;ArrayList1&apos;&#x0D;&#x0A;- Original project: &apos;CollectionFramework&apos;&#x0D;&#x0A;- Original element: &apos;maccess.Deom1&apos;&#x0D;&#x0A;- Renamed element: &apos;maccess.ArrayList1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Deom1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;maccess{Deom1.java[Deom1" matchStrategy="1" name="ArrayList1" qualified="false" references="true" similarDeclarations="false" stamp="1663192831000" textual="false" version="1.0"/>
+</session>

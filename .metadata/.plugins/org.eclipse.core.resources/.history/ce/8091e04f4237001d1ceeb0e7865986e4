@@ -1,0 +1,61 @@
+package maccess;
+import java.util.*;
+public class DemoStack1 {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		Stack<Integer> ob = new Stack<Integer>();
+		while(true)
+		{
+			System.out.println("======choice=========");
+			System.out.println("1.push()\n2.pop()\n3.peek()\n4.search()\n5.exit()");
+			System.out.println("enter the choice:");
+			switch(s.nextInt())
+			{
+			case 1:
+				System.out.println("enter the element:");
+				ob.push(new Integer(s.nextInt()));
+				System.out.println(ob.toString());
+				break;
+			case 2:
+				if(ob.isEmpty()) {
+					System.out.println("Stack is empty...");
+				}
+				else {
+					ob.pop();
+					System.out.println(ob.toString());
+				}
+				break;
+			case 3:
+				if(ob.isEmpty()) {
+					System.out.println("Stack is empty.........");
+				}
+				else {
+					System.out.println(ob.toString());
+					System.out.println(ob.peek());
+				}
+				break;
+			case 4:
+				if(ob.isEmpty()) {
+					System.out.println("Stack is empty");
+				}
+				else {
+					System.out.println("enter the ele to be searched: ");
+					Integer n = new Integer(s.nextInt());
+					int p = ob.search(n);
+					if(p>0) {
+						System.out.println("Ele found at position: "+p);
+					}
+					else {
+						System.out.println("Elee not found....");
+					}
+				}
+				break;
+			case 5:
+				System.out.println("stack operation Stopped...");
+				System.exit(0);
+			default:
+				System.out.println("Invalid choice-------------");
+			}
+		}
+	}
+}

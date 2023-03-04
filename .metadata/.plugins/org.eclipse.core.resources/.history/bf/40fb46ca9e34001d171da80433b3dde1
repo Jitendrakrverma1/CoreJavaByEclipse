@@ -1,0 +1,23 @@
+package jitendra;
+import java.util.Scanner;
+public class MainClass
+{
+	public static void main(String[] args) 
+	{
+		int atmnumber = 12345;
+		int atmpin = 123;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter Atm NUmber : ");
+		int atmNumber = s.nextInt();
+		System.out.println("Enter Atm Pin:");
+		int pin = s.nextInt();
+		if((atmnumber==atmNumber)&&(atmpin==pin))
+		{
+			System.out.println("Validation Done...");
+		}
+		else {
+			System.out.println("Incorrect Atm Number or Pin.....");
+			System.exit(0);
+		}
+	}
+}

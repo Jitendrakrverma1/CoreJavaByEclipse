@@ -1,0 +1,44 @@
+
+           // LinkedList Operation [It is a linear data structure]
+
+package maccess;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class LinkedList1 {
+	public static void main(String[] args)
+	{
+	   // Creating LinkedList object
+		LinkedList<String> list = new LinkedList<String>();
+		// Adding element to the linkedList
+		list.add("Jitendra");
+		list.add("Chandan");
+		list.add("Ram");
+		list.add("Raju");
+		list.add(2,"Kanak");
+		
+		// printing the element of linkedlist
+		System.out.println("list: "+list);
+		
+		// Adding element to the first position of linkedList
+		list.addFirst("Anoop");
+		// Adding element to the last position of linkedlist
+		list.addLast("Shailendra");
+		System.out.println("List: "+list);
+		
+		// Iterating the linkedList
+		System.out.println("====printing using Iterator ====");
+		Iterator<String> iterator = list.iterator();
+		while(iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+		}
+		
+		
+		//Removing element from linkedList
+		//list.remove();
+		list.remove(3);
+		list.remove("kanak");
+		System.out.println(list);
+	}
+}

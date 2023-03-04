@@ -1,0 +1,72 @@
+               
+// The collection interface [java.util.Collection] and map interface [java.util.Map] are two
+// "root" interfaces of java Collection Classes.
+
+// Framework := set of interface and classes which provide a ready-made architecture.
+// Collection is used for grouping the element or Objects.
+// Collection classes also have "methods, syntax and constructor."
+
+                /*    Methods Of Collection Interface         */ 
+  /*
+     1) add(Object O)  ,(2) addAll(collection c),  (3) remove(Object o)  (4) removeAll(Collection c)
+     5) clear()   (6) toArray()  (7) spliterator()  (8) size()   (9) isEmpty()
+     (10) iterator()   (11) max()  (12) equals(Object o)   (13) contains(Object o)
+     (14) containsAll (collection c) (15) hashCode()
+  */
+
+                   /*     List Interface [child interface of collection framework]   */
+     // ArrayList  , LinkedList, Vector, Stack   [ all are classes of list interface]
+             // we can instantiate the list object with any of these classes---
+     /*
+          List<T> ob = new ArrayList<> ();
+          List<T> ob = new LinkedList<> ();
+          List<T> ob = new Vector<> ();          where T is a type of Objects.
+     
+    ArrayList:= It can't be used for primitive type like, int, char etc. then we will 
+                need wrapper Class for such cases. 
+               * It provide dynamic array.  
+    * If we want to print all element of ArrayList One by One then we use "get(index)" method.           
+      */
+
+   // Java Program to demonstrate the working of arrayList.
+      
+package maccess;
+import java.util.ArrayList;
+public class ArrayList1
+{
+	// main method
+  public static void main (String[] args)
+  {
+	 // Declaring ArrayList with initial size n
+	  ArrayList<Integer> ob = new ArrayList<Integer>();
+	  // Appending new element at the end of the list
+//	  ob.add(12);
+//	  ob.add(13);
+//	  ob.add(14);
+	   // or
+	  for(int i=1; i<=5; i++)
+	  {
+		  ob.add(i);
+	  }
+	  // printing the element
+	  System.out.println(ob);
+	  // remove element at index 3
+	  ob.remove(3);
+	  // Displaying ArrayList after deletion
+	  System.out.println(ob);
+	  // Printing element one-by-one
+	  for(int i=0; i<ob.size(); i++)
+	  {
+		  System.out.print(ob.get(i)+" ");
+	  }
+  }
+}
+
+/*Output:=
+ 
+ [1, 2, 3, 4, 5]
+ [1, 2, 3, 5]
+ 1 2 3 5 
+ 
+ */
+ */

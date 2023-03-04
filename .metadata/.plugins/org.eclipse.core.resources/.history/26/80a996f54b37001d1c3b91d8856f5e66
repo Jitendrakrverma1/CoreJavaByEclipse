@@ -1,0 +1,63 @@
+package maccess;
+import java.util.*;
+public class Demoqueue1 {
+	public static void main(String[] args) {
+	   Scanner s = new Scanner(System.in);
+	   Queue<Integer> ob = new PriorityQueue<Integer>();
+	   while(true)
+	   {
+		   System.out.println("=====choice=====");
+		   System.out.println("1.add\n2.remove\n3.element\n4.peek\n5.poll\n6.exit.");
+		   System.out.println("Enter the choice: ");
+		   switch(s.nextInt())
+		   {
+		   case 1:
+			   System.out.println("Enter the element:");
+			   ob.add(new Integer(s.nextInt()));
+			   System.out.println(ob.toString());
+			   break;
+		   case 2:
+			   if(ob.isEmpty()) {
+				   System.out.println("Queue is empty..");
+			   }
+			   else {
+				   ob.remove();
+				   System.out.println(ob.toString());
+			   }
+			   break;
+		   case 3:
+			   if(ob.isEmpty()) {
+				   System.out.println("Queue is empty........");
+			   }
+			   else {
+				   System.out.println("element "+ob.element());
+				   System.out.println(ob.toString());
+			   }
+			   break;
+		   case 4:
+			   if(ob.isEmpty()) {
+				   System.out.println("Queue is empty........");
+			   }
+			   else {
+				   System.out.println("peek "+ob.peek());
+				   System.out.println(ob.toString());
+			   }
+			   break;
+		   case 5:
+			   if(ob.isEmpty()) {
+				   System.out.println("Queue is empty........");
+			   }
+			   else {
+				   System.out.println("poll "+ob.poll());
+				   System.out.println(ob.toString());
+			   }
+			   break;
+		   case 6:
+			   System.out.println("Queue operation ended.........");
+			   System.exit(0);
+		   default:
+			   System.out.println("Invalid choice");
+		   }
+	   }
+	}
+}

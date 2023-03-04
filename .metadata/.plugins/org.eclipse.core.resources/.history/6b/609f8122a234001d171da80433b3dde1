@@ -1,0 +1,26 @@
+package jitendra;
+public class AtmOperationImpl implements AtmOperationInterf 
+{
+    ATM atm = new ATM();
+	public void viewBalance() {
+		System.out.println("Available Balance is : "+atm.getBlance());
+	}
+
+	public void withdrawAmount(double withdrawAmount) {
+		System.out.println(withdrawAmount+" Collect the cash"+withdrawAmount);
+		atm.setBlance(atm.getBlance()-withdrawAmount);
+		viewBalance();
+		
+	}
+
+	public void depositAmount(double depositAmount) {
+		System.out.print(depositAmount+" Deposited Successfully !!");
+		atm.setBlance(atm.getBlance()+depositAmount);
+		viewBalance();
+	}
+
+	public void viewMiiniStatement() {
+		
+	}
+
+}

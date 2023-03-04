@@ -1,0 +1,38 @@
+package maccess;
+import java.util.*;
+public class DemoList1 {
+	public static void main(String[] args)
+	{
+	   Scanner s = new Scanner(System.in);
+	   ArrayList<Integer> arr = new ArrayList<Integer>();
+	   while(true)
+	   {
+		   System.out.println("===choice=====");
+		   System.out.println("1.add(E)\n2.remove(object)\n3.get(index)\n4.set(index,E)\n5.add(index,E)\n6.remove(index)\n7.exit.");
+		   System.out.println("Enter the choice: ");
+		   int n = s.nextInt();
+		   switch(n)
+		   {
+		   case 1:
+			   System.out.println("Enter the Integer Element: ");
+			   arr.add(new Integer(s.nextInt()));
+			   System.out.println(arr.toString());
+			   break;
+		   case 2:
+			   break;
+		   case 3:
+			   break;
+		   case 4:
+			   break;
+		   case 5:
+			   break;
+		   case 6:
+			   break;
+		   case 7:
+			   System.exit(0);
+		   default:
+			   System.out.println("Invalid choice.");
+		   }
+	   }
+	}
+}

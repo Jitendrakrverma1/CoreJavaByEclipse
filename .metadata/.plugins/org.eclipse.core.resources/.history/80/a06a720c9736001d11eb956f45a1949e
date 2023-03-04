@@ -1,0 +1,18 @@
+package maccess;
+import java.util.Stack;
+public class Stack1 
+{
+	public static void main(String[] args) 
+	{
+		// creating a generic Stack
+		Stack<String> ob = new Stack<String>();
+		// adding element to stack
+		ob.add("J");
+		ob.addElement("M");
+		ob.push("N");
+		ob.push("K");
+		System.out.println(ob);
+		Object s = ob.search("N");
+		System.out.println(s);
+	}
+}

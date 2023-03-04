@@ -1,0 +1,78 @@
+
+                  // Performing all operation of arrayList<E>:=
+package maccess;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Spliterator;
+import java.util.Spliterators;;
+public class ArrayList2
+{
+   public static void main(String[] args)
+   {
+	   // Creating ArrayList<E> object
+	   ArrayList<Integer> ob = new ArrayList<Integer>();
+	   // Integer may be like String, Float, Double, etc.
+	   //Adding element to ArryaList<E> objects
+	   System.out.println("======Use of add() method==========");
+	   ob.add(12);
+	   ob.add(13);ob.add(14);ob.add(15);ob.add(16);
+	   
+	   // displaying elements
+	   System.out.println(ob);
+	   // Adding 10 at 1st index
+	   System.out.println("=== add element at particular index using add(index,Integer element) method===");
+	   ob.add(1, 10);
+	   System.out.println(ob);
+	   
+	   // change element in using set() method arrayList
+	   System.out.println("======use of set(int index, Integer element) method=======");
+	   ob.set(3, 7);
+	   System.out.println(ob);
+	   
+	   // remove element from ArrayList
+	   System.out.println("=====Use of remove(Object O) or remove(int index) method======");
+	    // for Object removal
+	   ob.remove(new Integer(15));
+	   // for index value removal
+	   ob.remove(2);
+	   System.out.println(ob);
+	   
+	   // Iterating ArrayList
+	   System.out.println("==== Iterating the ArrayList====");
+	   for(Integer k : ob)
+	   {
+		   System.out.println(k);
+	   }
+	   System.out.println("====Iterating ArrayList Using Spliterator()====");
+	   Spliterator<Integer> sp = ob.spliterator();
+	   sp.forEachRemaining(k->
+		{
+		   System.out.println(k);  
+	   });
+	   
+	   // size() method find the number of elements in an arrayList.
+	   System.out.println("=====use of 'size() method'=====");
+	   System.out.println("Number of element in ArrayList: "+ob.size());
+	   
+	   // Sort() of ArrayList
+	   System.out.println("==== use of 'sort() method' in ArrrayList======");
+	   // sort() methods comes from Collections class
+	   Collections.sort(ob);
+	   System.out.println(ob);
+	   
+	   System.out.println("====== Use of 'indexOf()  method '==========");
+	    Integer po=ob.indexOf(7);
+	   System.out.println(po);
+	   
+	   System.out.println("===use of 'Object get(int index)' method=====");
+	   Integer p = ob.get(2);
+	   System.out.println(p);
+	   
+	   System.out.println("====use of contains(Object o) method====");
+	   ob.contains(12);
+	   System.out.println(ob);
+	   
+	   
+	   
+   }
+}

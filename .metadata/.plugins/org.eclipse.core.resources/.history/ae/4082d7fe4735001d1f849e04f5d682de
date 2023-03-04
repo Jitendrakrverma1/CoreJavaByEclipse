@@ -1,0 +1,47 @@
+
+                               /*     Vector In Java    */
+// Vector implements list interface like ArrayList. It is synchronized and it gives poor performance in searching
+//  delete, and update of its element.
+
+                              /* Three way to create vector class object:    */
+//  Method 1:=  Vector vec = new Vector();
+// Method 2:=  Vector obj = new Vector(int initialCapacity);
+// Method 2:=  Vector obj = new Vector(int initialCapacity , capacityIncrement);
+
+package maccess;
+import java.util.Enumeration;
+import java.util.Vector;
+public class Vector1 
+{
+	public static void main(String[] args) 
+	{
+       /* Vector of initial capacity(size) of 2  */
+		Vector<String> vec = new Vector<String>(2);
+		
+		// Adding element to a Vector
+		vec.add("Pankaj");
+		vec.add("Chandan");
+		vec.add("Nandu");
+		vec.add(3, "Anirudh");
+		vec.addElement("Jitendra");
+		vec.addElement("shailendra");
+		// Displaying the element of vector
+		System.out.println("Vec: "+vec);
+		
+		/* Check size and capacityIncrement */
+		System.out.println("size of Vector: "+vec.size());
+		System.out.println("Default Capacity of Vector: "+vec.capacity());
+		
+		// display Vector element
+		Enumeration<String> enum1 = vec.elements();
+		while(enum1.hasMoreElements())
+		{
+			System.out.println(enum1.nextElement());
+		}
+		
+		System.out.println("Vec: "+vec);
+		// boolean contains(Object element) method
+		boolean s = vec.contains("Jitendra");
+		System.out.println(s);
+	}
+}

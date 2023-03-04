@@ -1,0 +1,10 @@
+package maccess;
+import java.util.Hashset;
+public class Demoset1 
+{
+	public static void main(String[] args) 
+	{
+		Hashset hs1 = new Hashset();
+	
+	}
+}

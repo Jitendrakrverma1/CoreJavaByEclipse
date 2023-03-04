@@ -1,0 +1,38 @@
+
+                     /*     HashSet  */
+// It is implementation class of  set<E> interface.
+/*  set<E> canbe implemented :-
+  1) Set<E> s = new HashSet<E>();
+  2) Set<E> s1 = new LinkedHashSet<E>();
+  3) Set<E> s2 = new TreeSet<E>();
+*/
+package maccess;
+
+import java.util.HashSet;
+
+public class HashSet1 
+{
+	public static void main(String[] args)
+	{
+      // HashSet declaration
+		HashSet<String> hset = new HashSet<String>();
+	 // Adding element to the HAshSet
+	    hset.add("Apple");
+	    hset.add("Mango");
+	    hset.add("Grapes");
+	    hset.add("Oragne");
+	    hset.add("Fig");
+	    // Adding duplicate element
+	    hset.add("Apple");
+	    hset.add("Mango");
+	    // Addition of null values
+	    hset.add(null);
+	    hset.add(null);
+	    // Displaying Hashset elements
+	    System.out.println("hset: "+hset);
+	    
+	    boolean s = hset.contains("Mango");
+	    System.out.println("Contains: "+s);
+	    
+	}
+}

@@ -1,0 +1,88 @@
+package maccess;
+import java.util.Stack;
+public class Stack1 
+{
+	public static void main(String[] args) 
+	{
+		// creating a generic Stack
+		Stack<String> ob = new Stack<String>();
+		// adding element to stack
+		ob.add("J");
+		ob.addElement("M");
+		ob.push("N");
+		ob.push("K");
+		System.out.println(ob);   // [J, M, N, K]
+		
+		Object s = ob.search("N");
+		System.out.println(s);
+		
+		// using peek() method is used for retriving value from peek of stack
+		System.out.println("peek element: "+ob.peek());  // k
+		
+		// pop() method
+		System.out.println("Popped element:"+ob.pop());  // K
+		System.out.println(ob);
+		
+		// capacity() method
+		System.out.println("default capacity:"+ob.capacity());  // 10
+		
+		//
+		ob.elementAt(0);
+		System.out.println(ob);
+		
+		boolean s1 = ob.empty();
+		System.out.println(s1);
+		
+		Object s2 = ob.elements();
+		System.out.println(s2);
+		
+		Stack<String> ob1 = new Stack<String>();
+		ob1.push("M");
+		ob.push("N");
+		ob.push("A");
+		boolean s3 = ob.equals(ob1);
+		System.out.println(s3);
+		
+		String s11 =ob.firstElement();
+		System.out.println(s11);
+		
+		String s12 = ob.lastElement();
+		System.out.println(s12);
+		boolean s13 =ob.contains(ob);
+		System.out.println(s13);
+		String s14 = ob.get(0);
+		System.out.println(s14);
+		Object s15 = ob.getClass();
+		System.out.println(s15);
+		int s16 = ob.indexOf(ob);   // int or object
+		System.out.println(s16);
+		Object s17 = ob.indexOf("M", 0);
+		System.out.println(s17);
+		ob.insertElementAt("Jitendra", 2);
+		System.out.println(ob);
+		boolean s18 = ob.isEmpty();
+		System.out.println(s18);
+		ob.iterator();
+		System.out.println();
+		ob.remove(0);
+		System.out.println();
+		ob.remove(ob);
+		System.out.println();
+		ob.removeElement(ob);
+		System.out.println();
+		ob.removeAllElements();
+		System.out.println();
+		ob.search(ob);
+		System.out.println();
+		ob.set(0, null);
+		System.out.println();
+		ob.setElementAt(null, 0);
+		System.out.println();
+		ob.subList(0, 0);
+		System.out.println();
+		ob.toString();
+		System.out.println();
+		ob.spliterator();
+		
+	}
+}

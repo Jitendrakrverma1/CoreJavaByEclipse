@@ -1,0 +1,29 @@
+package maccess;
+import java.util.Stack;
+public class Stack1 
+{
+	public static void main(String[] args) 
+	{
+		// creating a generic Stack
+		Stack<String> ob = new Stack<String>();
+		// adding element to stack
+		ob.add("J");
+		ob.addElement("M");
+		ob.push("N");
+		ob.push("K");
+		System.out.println(ob);   // [J, M, N, K]
+		
+		Object s = ob.search("N");
+		System.out.println(s);
+		
+		// using peek() method is used for retriving value from peek of stack
+		System.out.println(ob.peek());  // k
+		
+		// pop() method
+		System.out.println(ob.pop());
+		
+		// capacity() method
+		System.out.println(ob.capacity());
+		
+	}
+}

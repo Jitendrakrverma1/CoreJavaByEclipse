@@ -1,0 +1,24 @@
+
+                  // Performing all operation of arrayList<E>:=
+package maccess;
+import java.util.ArrayList;;
+public class ArrayList2
+{
+   public static void main(String[] args)
+   {
+	   // Creating ArrayList<E> object
+	   ArrayList<Integer> ob = new ArrayList<Integer>();
+	   // Integer may be like String, Float, Double, etc.
+	   //Adding element to ArryaList<E> objects
+	   System.out.println("======Use of add() method==========");
+	   ob.add(12);
+	   ob.add(13);ob.add(14);ob.add(15);ob.add(16);
+	   
+	   // displaying elements
+	   System.out.println(ob);
+	   // Adding 10 at 1st index
+	   System.out.println("=== add element at particular index using add(index,Integer element) method===");
+	   ob.add(1, 10);
+	   System.out.println(ob);
+   }
+}

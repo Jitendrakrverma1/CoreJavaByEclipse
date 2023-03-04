@@ -1,0 +1,58 @@
+                            /*    LinnkedHashSet      */
+// LinkedHashset is an also an implementation of Set<E> interface.
+// It is similar to HashSet and TreeSet.
+//It maintain the order of element according to their insertion order.
+
+// Implementation of LinkedHAshSet:-
+//           LinkedHashSet<E> object_name = new LikedHAshSet<E>();
+
+package maccess;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Spliterator;
+public class LikedHashSet1 {
+	public static void main(String[] args) {
+	   // LinkedHAshSet of String type
+		LinkedHashSet<String> list = new LinkedHashSet<String>();
+		
+		// Adding element to LinkedhashSet
+		list.add("A");
+		list.add("M");
+		list.add("N");
+		list.add("P");
+		list.add("Q");
+		list.add(new String("L"));
+		System.out.println("list: "+list);
+		
+		// linkedHashSet of INteger type
+		LinkedHashSet<Integer> list1 = new LinkedHashSet<Integer>();
+		list1.add(11);
+		list1.add(12);
+		list1.add(13);
+		list1.add(14);
+		System.out.println("list1:" +list1);
+		
+		// contains() method
+		boolean l = list.contains(list1);
+		System.out.println(l);
+		
+		boolean l1 = list.equals(list1);
+		System.out.println(l1);
+		
+		Object l11 = list.getClass();
+		System.out.println(l11);
+		
+		Object o1 = list.isEmpty();
+		System.out.println(o1);
+		Iterator<String> o2 = list.iterator();
+		System.out.println(o2);
+		list.remove(l11);
+		System.out.println(list);
+		System.out.println(list.size());
+		Spliterator<String> o3 = list.spliterator();
+		System.out.println(o3);
+		System.out.println(list.toArray());
+		System.out.println(list.toString());
+		
+	}
+}

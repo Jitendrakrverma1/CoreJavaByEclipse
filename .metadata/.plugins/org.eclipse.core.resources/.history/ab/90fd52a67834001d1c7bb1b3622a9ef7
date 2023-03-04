@@ -1,0 +1,33 @@
+               
+// The collection interface [java.util.Collection] and map interface [java.util.Map] are two
+// "root" interfaces of java Collection Classes.
+
+// Framework := set of interface and classes which provide a ready-made architecture.
+// Collection is used for grouping the element or Objects.
+// Collection classes also have "methods, syntax and constructor."
+
+                /*    Methods Of Collection Interface         */ 
+  /*
+     1) add(Object O)  ,(2) addAll(collection c),  (3) remove(Object o)  (4) removeAll(Collection c)
+     5) clear()   (6) toArray()  (7) spliterator()  (8) size()   (9) isEmpty()
+     (10) iterator()   (11) max()  (12) equals(Object o)   (13) contains(Object o)
+     (14) containsAll (collection c) (15) hashCode()
+  */
+
+                   /*     List Interface [child interface of collection framework]   */
+     // ArrayList  , LinkedList, Vector, Stack   [ all are classes of list interface]
+             // we can instantiate the list object with any of these classes---
+     /*
+          List<T> ob = new ArrayList<> ();
+          List<T> ob = new LinkedList<> ();
+          List<T> ob = new Vector<> ();          where T is a type of Objects.
+     
+    ArrayList:= It can't be used for primitive type like, int, char etc. then we will 
+    need wrapper Class for such cases.      
+      */
+      
+package maccess;
+
+public class Deom1 {
+
+}

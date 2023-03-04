@@ -1,0 +1,12 @@
+package maccess;
+import java.util.*;
+public class DemoSet4
+{
+	public static void main(String[] args)
+	{
+		Scanner s = new Scanner(System.in);
+		Set<Integer> ob1 = hashCode<Integer>();
+		s.close();
+	}
+	}
+}

@@ -1,0 +1,10 @@
+package maccess;
+import java.util.*;
+public class DemoSet4
+{
+	public static void main(String[] args)
+	{
+	
+	}
+}
+

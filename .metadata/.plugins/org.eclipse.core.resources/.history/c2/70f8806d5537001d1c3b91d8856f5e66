@@ -1,0 +1,46 @@
+                               /*  StringTokenizer */
+// stringTokenizer class is from java.utl.package and which is used to break the given string into
+//    piece(tokens) based on deliMeter.
+
+
+package maccess;
+import java.util.*;
+public class StringTokenizer1 {
+	public StringTokenizer1(String str, String delimeter) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the string: ");
+		String str = s.nextLine();
+		System.out.println("enter the delimeter: ");
+		String delimeter = s.nextLine();
+		StringTokenizer1 str1 = new StringTokenizer1(str, delimeter);
+		System.out.println("======count of tokens====");
+		System.out.println("Count: "+ str1.countTokens());
+		System.out.println("Diaplay String:");
+		while(str1.hashMoreTokens())
+		{
+			String tk = str1.nextToken();
+			System.out.println("count of tokens: "+str1.countTokens());
+		}
+		s.close();
+	}
+
+	private boolean hashMoreTokens() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	private String nextToken() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private String countTokens() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

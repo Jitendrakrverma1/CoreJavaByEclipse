@@ -1,0 +1,22 @@
+
+                        /*    Queue       */
+/* The queue interface is declared as:
+     " public interface Queue extends Collection  "
+     
+   * Queue can be created :-
+       Queue<E>  obj = new PriorityQueue<E>();
+       Queue<E>  obj = new LinkedList<E>();
+       Queue<E>  obj = new ArrayDequqe<E>();
+*/
+
+package maccess;
+
+import java.util.LinkedList;
+
+public class Queue 
+{
+   public static void main(String[] args)
+   {
+	   Queue<Integer> q = new LinkedList();
+   }
+}

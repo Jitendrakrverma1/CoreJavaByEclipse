@@ -1,0 +1,15 @@
+package maccess;
+import java.util.Stack;
+import java.util.Vector;
+@SuppressWarnings({ "serial", "rawtypes" })
+public class Stack1 extends Vector
+{
+	public static void main(String[] args) 
+	{
+		// creating a generic Stack
+		Stack<String> ob = new Stack<String>();
+		// adding element to stack
+		ob.add("jitendra");
+		System.out.println(ob);
+	}
+}

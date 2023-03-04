@@ -1,0 +1,114 @@
+package maccess;
+import java.util.*;
+public class DemoList1 {
+	@SuppressWarnings("removal")
+	public static void main(String[] args)
+	{
+	   Scanner s = new Scanner(System.in);
+	   ArrayList<Integer> arr = new ArrayList<Integer>();
+	   while(true)
+	   {
+		   System.out.println("===choice=====");
+		   System.out.println("1.add(E)\n2.remove(object)\n3.get(index)\n4.set(index,E)\n5.add(index,E)\n6.remove(index)\n7.exit.");
+		   System.out.println("Enter the choice: ");
+		   int n = s.nextInt();
+		   switch(n)
+		   {
+		   case 1:
+			   System.out.println("Enter the Integer Element: ");
+			   arr.add(new Integer(s.nextInt()));
+			   System.out.println(arr.toString());
+			   break;
+		   case 2:
+			   if(arr.isEmpty()) {
+				   System.out.println("List is empty........");
+			   }
+			   else {
+				   System.out.println("Enter the element to be deleted: ");
+				   Integer s1 = new Integer(s.nextInt());
+				  if(arr.contains(s1)) {
+					  arr.remove(s1);
+					  System.out.println(arr.toString());
+				  }
+				  else {
+					  System.out.println("Element not found...in List<E> ..........");
+				  }
+			   }
+			   break;
+		   case 3:
+			   if(arr.isEmpty()) {
+				   System.out.println("List is empty.......");
+			   }
+			   else {
+				   System.out.println("Enter the index: ");
+				   int index = s.nextInt();
+				   if(arr.contains(index)) {
+					   Integer ob1 = arr.get(index);
+					   System.out.println("Element at index "+index+" is"+ob1.toString());
+				   }
+				   else {
+					   System.out.println("Invalid Index........");
+				   }
+			   }
+			   break;
+		   case 4:
+			   if(arr.isEmpty()) {
+				   System.out.println("List is empty.......");
+			   }
+			   else {
+				   System.out.println("Enter the index: ");
+				   int index1 = s.nextInt();
+				   if(index1>0 && index1<arr.size()) {
+					   System.out.println("Enter the element: ");
+					   Integer ele = new Integer(s.nextInt());
+					   arr.set(index1, ele);
+					   System.out.println(ele.toString());
+				   }
+				   else {
+					   System.out.println("Invalid Index........");
+				   }
+			   }
+			   break;
+		   case 5:
+			   if(arr.isEmpty()) {
+				   System.out.println("List is empty.......");
+			   }
+			   else {
+				   System.out.println("Enter the index: ");
+				   int index2 = s.nextInt();
+				   if(index2>0 && index2<arr.size()) {
+					   System.out.println("Enter the element to be added: ");
+					   Integer ele1 = new Integer(s.nextInt());
+					   arr.add(index2, ele1);
+					   System.out.println(ele1.toString());
+				   }
+				   else {
+					   System.out.println("Invalid Index........");
+				   }
+			   }
+			   break;
+		   case 6:
+			   if(arr.isEmpty()) {
+				   System.out.println("List is empty.......");
+			   }
+			   else {
+				   System.out.println("Enter the index: ");
+				   int index3 = s.nextInt();
+				   if(arr.contains(index3)) {
+					   arr.remove(index3);
+					   System.out.println(arr.toString());
+				   }
+				   else {
+					   System.out.println("Invalid Index........");
+				   }
+			   }
+			   break;
+		   case 7:
+			   System.out.println("List Operation stoppped..............");
+			   System.exit(0);
+		   default:
+			   System.out.println("Invalid choice.");
+		   }
+	   }
+	}
+}

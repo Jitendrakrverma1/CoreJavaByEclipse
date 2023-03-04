@@ -1,0 +1,6 @@
+package jitendra;
+
+public interface AtmOperationInterf 
+{
+
+}
